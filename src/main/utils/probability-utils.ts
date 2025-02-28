@@ -1,5 +1,9 @@
 import { ScoreProbabilities } from "../model/ScoreProbabilities";
 
+/**
+ * Takes in an array of scores and return the probability that each score occurs and how many times it occurred
+ * @param scores
+ */
 export const getScoreOccurrenceProbability = (scores: number[]): ScoreProbabilities => {
 
   const scoreCounts: { [key: string]: number } = {};
